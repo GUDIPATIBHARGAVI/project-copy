@@ -1,0 +1,48 @@
+/* Add these styles to your component's CSS or SCSS file */
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #800080; /* Purple background color */
+}
+
+.mat-card {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #ffffff; /* White card background color */
+  border-radius: 8px; /* Optional: Add some border-radius for a rounded appearance */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.mat-card-header {
+  background-color: #800080; /* Purple header background color */
+  color: white; /* White text color for better visibility on purple background */
+}
+
+.example-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.example-full-width {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.mat-radio-group {
+  margin-top: 15px;
+}
+
+.mat-raised-button {
+  margin-top: 15px;
+  background-color: #800080; /* Purple button background color */
+  color: white; /* White text color for button text */
+}
+
+/* Adjust any other specific styles as needed */

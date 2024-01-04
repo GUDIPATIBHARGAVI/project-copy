@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card shadow-effect bg-secondary-theme">
+        <div class="card-body text-center">
+          <h3 class="text-theme-center">All Content</h3>
+          <p>From here you can manage your Content</p>
+          <button class="btn btn-info bg-theme" routerLink="/new-post">
+            Add new Content
+          </button>
+          <button class="btn btn-warning ml-2" routerLink="/dashboard">
+            Back to dashboard
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card shadow-effect">
+        <div class="card-body">
+          <table class="table row-border hover">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>description</th>
+                <th>author</th>
+                <th>image</th>
+                <th>date</th>
+                <th>action</th>
+                <th>tags</th>
+                <th>content</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let content of contentList">
+                <td>{{ content.id }}</td>
+                <td>{{ content.description }}</td>
+                <td>{{ content.author }}</td>
+                <td>
+                  <img
+                    [src]="content.image"
+                    alt="Content Image"
+                    class="fixed-image"
+                  />
+                </td>
+
+                <td>{{ content.date }}</td>
+                <td>
+                  <button class="btn btn-primary">Edit</button>
+
+                  <button
+                    class="btn btn-danger ml-2"
+                    (click)="deleteContent(content.id)"
+                  >
+                    Delete
+                  </button>
+                </td>
+                <td>{{ content.tags }}</td>
+                <td>{{ content.content }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

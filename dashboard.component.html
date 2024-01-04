@@ -1,0 +1,76 @@
+<!-- ... existing code ... -->
+<div class="container position-relative">
+  <button
+    class="btn btn-sm btn-info bg bg-secondary-theme text-theme-primary float-end m-3"
+    (click)="logout()"
+  >
+    Logout
+  </button>
+
+  <div class="container">
+    <div class="row">
+      <!-- ... existing code ... -->
+
+      <div class="col-md-4 mb-5">
+        <div class="card shadow-effect" routerLink="/categories">
+          <div class="card-body text-center bg-secondary-theme">
+            <h1 class="mt-3 text-theme-primary">
+              <i class="fas fa-clipboard-list"></i>
+            </h1>
+            <h2 class="text-theme-primary">Category</h2>
+            <p>Manage category details here</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-5">
+        <div class="card shadow-effect" routerLink="/post">
+          <div class="card-body text-center bg-secondary-theme">
+            <h1 class="mt-3 text-theme-primary">
+              <i class="fas fa-file-image"></i>
+            </h1>
+            <h2 class="text-theme-primary">Post</h2>
+            <p>Manage your content here..!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- New cards for Terms and Conditions, About, and Contact Us -->
+      <div class="col-md-4 mb-5">
+        <div class="card shadow-effect" routerLink="/terms">
+          <div class="card-body text-center bg-secondary-theme">
+            <h1 class="mt-3 text-theme-primary">
+              <i class="fas fa-file"></i>
+            </h1>
+            <h2 class="text-theme-primary">Terms and Conditions</h2>
+            <p>Read our terms and conditions</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-5">
+        <div class="card shadow-effect" routerLink="/about">
+          <div class="card-body text-center bg-secondary-theme">
+            <h1 class="mt-3 text-theme-primary">
+              <i class="fas fa-info-circle"></i>
+            </h1>
+            <h2 class="text-theme-primary">About</h2>
+            <p>Learn more about us</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-5">
+        <div class="card shadow-effect" routerLink="/contact">
+          <div class="card-body text-center bg-secondary-theme">
+            <h1 class="mt-3 text-theme-primary">
+              <i class="fas fa-phone"></i>
+            </h1>
+            <h2 class="text-theme-primary">Contact Us</h2>
+            <p>Get in touch with us</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
